@@ -1,0 +1,90 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
+
+/* Tags Only====================================================*/
+
+h1, h2, h3 {
+  font-family: 'Droid Serif', serif;
+}
+
+
+
+/* Classes Only=================================================*/
+
+.navbar {
+  border: none;
+  background: #870000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #190A05 , #870000); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #190a05 , #870000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+// This is how SCSS looks and works
+.navbar-default .navbar-brand, .navbar-default .navbar-nav li a  {
+  color: #ffffff;
+  &:hover {
+    color: #ffffff;
+    opacity: 0.75;
+  }
+}
+
+.navbar-default .navbar-brand {
+    font-family: 'Droid Serif', serif;
+    font-weight: bold;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+.navbar-default .navbar-toggle {
+  border: 2px solid #fff;
+  &:hover, &:focus {
+    background-color: #b29f94;
+  }
+}
+
+.home-callout {
+  margin-top: -20px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  color: white;
+  background: #870000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #870000 , #190A05); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #870000 , #190A05); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.codeIcon {
+  color: #00ff26;
+}
+
+.col1 {
+  min-height: 300px;
+  background-color: #b29f94;
+}
+
+.col2 {
+  min-height: 300px;
+}
+
+.col3 {
+  min-height: 300px;
+  background-color: #b29f94;
+}
