@@ -22,7 +22,7 @@
 /* Tags Only====================================================*/
 
 h1, h2, h3 {
-  font-family: 'Lobster Two', cursive;
+  font-family: 'Droid Serif', serif;
 }
 
 
@@ -45,6 +45,11 @@ h1, h2, h3 {
   }
 }
 
+.navbar-default .navbar-brand {
+    font-family: 'Droid Serif', serif;
+    font-weight: bold;
+}
+
 .home-callout {
   margin-top: -20px;
   padding-top: 50px;
@@ -57,4 +62,14 @@ h1, h2, h3 {
 
 .codeIcon {
   color: #00ff26;
+}
+
+.col1 {
+  min-height: 300px;
+  background-color: #b29f94;
+}
+
+.col3 {
+  min-height: 300px;
+  background-color: #b29f94;
 }

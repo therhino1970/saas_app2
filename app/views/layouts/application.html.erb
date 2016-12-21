@@ -5,7 +5,7 @@
     <%= csrf_meta_tags %>
     
     <link href="//fonts.googleapis.com/css?family=Lobster+Two:400,400i,700,700i" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -21,7 +21,7 @@
             <span class="icon-bar"></span>
           </button>
           
-          <%= link_to "/", class: "navbar-brand" do %>
+          <%= link_to root_path, class: "navbar-brand" do %>
             <i class="fa fa-group codeIcon"></i>
             DeveloperMATCH
             <i class="fa fa-code codeIcon"></i>
@@ -31,8 +31,8 @@
         
         <div class="collapse navbar-collapse" id="main-nav-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to "Creator", "/creator" %></li>
-            <li><%= link_to "About", "/about" %></li>
+            <li><%= link_to "Creator", creator_path %></li>
+            <li><%= link_to "About", about_path %></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div>
