@@ -50,6 +50,17 @@ h1, h2, h3 {
     font-weight: bold;
 }
 
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+.navbar-default .navbar-toggle {
+  border: 2px solid #fff;
+  &:hover, &:focus {
+    background-color: #b29f94;
+  }
+}
+
 .home-callout {
   margin-top: -20px;
   padding-top: 50px;
@@ -67,6 +78,10 @@ h1, h2, h3 {
 .col1 {
   min-height: 300px;
   background-color: #b29f94;
+}
+
+.col2 {
+  min-height: 300px;
 }
 
 .col3 {
